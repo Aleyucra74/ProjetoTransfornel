@@ -1,0 +1,142 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#container {
+    margin-top: 170px;
+    margin-left: 80px;
+}
+h1#titulo {
+    margin-left: 60px;
+    font-size: 34px;
+    margin-top: 40px;
+    color: #2f2929;
+}
+#container_simulador {
+    overflow: hidden;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 2px 40px 0 #9B625A;
+    margin-left: 20px;
+    padding: 41px;
+    width: 420px;
+    height: 500px;
+    text-align: center;
+}
+#plano_recomendado {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 2.18px;
+    color: #2f2929;
+    text-transform: uppercase;
+}
+#titulo_mens {
+    color: #9B625A;
+    font-size: 14px;
+    font-weight: 700px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+#valor {
+    text-align: center;
+    color: #2f2929;
+    font-size: 64px;
+}
+#valor::before {
+    color: #30455c;
+    top: -20px;
+    content: "R$";
+    font-size: 16px;
+}
+#botao-primario {
+    border: none;
+    border-radius: 4px;
+    padding: 0 40px;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #002868;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+#botao-primario:hover {
+    background: none;
+    border: 1px solid black;
+    color: white;  
+    color: black;
+    transition: 0.4s;
+}
+#botao-primario::after {
+    position: absolute;
+    content: "";
+    margin-left: -160px;
+    top: 400px;
+    width: 400px;
+    display: block;
+    background: black;
+    height: 1.3px;
+    cursor: default;
+}
+#text-embaixo-botao {
+    font-size: 18px;
+}
+#text-embaixo-botao::before {
+    left: 810px;
+    position: absolute;
+    content: "X";
+    color: red;
+    font-size: 18px;
+}
+#text-embaixo-texto {
+    font-size: 18px;
+}
+#text-embaixo-texto::before {
+    content: "✔";
+    position: absolute;
+    left: 810px;
+    top: 486px;
+}
+#texto_embaixo_titulo {
+    margin-top: 10px;
+    margin-left: 70px;
+    font-size: 19px;
+    color: #30455c;
+}
+#numero_trafos {
+    width: 350px;
+    color: #30455c;
+    font-size: 14px;
+    margin-left: 70px;
+    padding: 2px;
+}
+#numero_trafos:focus {
+    font-size: 20px;
+}
+#botao_calcular {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 170px;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 30px;
+}
+#texto_embaixo_botao_calcular {
+    margin-left: 70px;
+    font-size: 21px;
+    color: #30455c;
+}
+#descricao_valor {
+    color: #30455c;
+    font-size: 21px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Fincanceiro</title>
+    <link rel="stylesheet" href="simulador.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="titulo">Encontre o plano ideal</h1><i data-v-6de400cd="" data-v-41c57f78="" class="ponto light-blue" data-v-770309ae="" style="width: 8px; height: 8px;"></i>
+        <br> 
+        <a id="texto_embaixo_titulo">1 - Quantos trafos você deseja monitorar?</a>
+        <br> <br>
+        <input autofocus id="numero_trafos" type="text">
+        <br> <br>
+        <button onclick="calcular_custo()" id="botao_calcular">Calcular</button>
+        <br> <br> <br> <br> <br> <br>
+        <a id="texto_embaixo_botao_calcular">Monitoramento em tempo real</a>
+    </div>
+    <div id="container_simulador">
+        <a id="plano_recomendado">Plano Inicial</a>
+        <br> <br> <br> 
+        <a id="titulo_mens">Preços a partir de</a>
+        <br> <br> <br>
+        <a id="valor">116.66</a>
+        <br> <br> <br>
+        <button id="botao-primario">Contratar</button>
+        <br> <br> <br> <br> <br> <br>  
+        <a id="text-embaixo-botao">Manutenção não está incluso</a>
+        <br> <br>
+        <a id="text-embaixo-texto">Sensor incluso</a>
+        <br> <br> <br> <br> <br>
+        <a id="descricao_valor">Valor mensal</a>
+    </div>
+</body>
+</html>
+<script>
+    function calcular_custo() {
+        var calculo = Number(numero_trafos.value) * 1399.99;
+        valor.innerHTML = calculo.toFixed(2);
+        plano_recomendado.innerHTML = 'Plano Avaliado';
+        var calculo_mensal = calculo / 12;
+        valor.innerHTML = calculo_mensal.toFixed(2);
+    }
+</script>
