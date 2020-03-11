@@ -1,0 +1,94 @@
+body {
+    background-image: url(fundo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: 1366px 720px;
+}
+.login {
+    background-image :url(fundo-login.jpg);
+    opacity: 1;
+    height: 330px;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 14%;
+    border-radius: 20px;
+}
+#user {
+    margin-left: 190px;
+    margin-top: -30px;
+}
+#text-login {
+    margin-left: 165px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+#user-text {
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+.content-login {
+    margin-left: 40px;
+}
+#input-email {
+    width: 340px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 8px;
+    text-indent: 10px;
+    color: black;
+}
+#input-pass {
+    margin-top: 8px;
+    width: 340px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    text-indent: 10px;
+}
+#user-text-2 {
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    transition: 0.3s;
+}
+#user-text-2:hover {
+    transition: 0.3s;
+    color: white;
+    font-weight: bold;
+}
+#btn-entrar {
+    margin-left: 150px;
+    padding: 6px 20px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    cursor: pointer;
+    transition: 0.4s;
+}
+#btn-entrar:hover {
+    background-color: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    transition: 0.4s all;
+    border: 1px solid white;
+    transform: scale(1.1)
+}
+#esqueceu-pass {
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+}
+#esqueceu-pass:hover {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
