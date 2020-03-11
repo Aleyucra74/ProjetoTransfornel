@@ -3,7 +3,7 @@ use projetotransformers;
 
 create table login(
 nome varchar(45) not null,
-cpf_cnpj varchar(45) primary key,
+cpf_cnpj varchar(13) primary key,
 email varchar(45) not null,
 senha varchar(45) not null
 );
